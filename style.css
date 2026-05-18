@@ -428,3 +428,34 @@ footer{
     margin-top: 40px;
 }
 
+@media (max-width: 480px){
+    .text-section h1{
+        font-size: 28px;
+    }
+    
+    .text-section h1 .sub{
+        font-size: 22px;
+    }
+    
+    .par{
+        font-size: 14px;
+    }
+    
+    .title-center{
+        font-size: 25px;
+    }
+    
+    .container-card{
+        max-width: 100%;
+    }
+    
+    .link-card{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .link-social{
+        width: 100%;
+        text-align: center;
+    }
+}
