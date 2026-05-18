@@ -428,24 +428,13 @@ footer{
     margin-top: 40px;
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
     .icon .logo{
-        font-size: 20px;
+        font-size: 18px;
+        max-width: 70%;
     }
 
-    .text-section h1{
-        font-size: 26px;
-    }
-
-    .par{
-        font-size: 13px;
-    }
-
-    .title-center{
-        font-size: 22px;
-    }
-
-    .container-card{
-        max-width: 100%;
+    .navbar{
+        padding: 15px 10px;
     }
 }
