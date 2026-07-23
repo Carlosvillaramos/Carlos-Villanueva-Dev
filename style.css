@@ -155,6 +155,70 @@ body{
     background: linear-gradient(90deg, #a8edda, #ef476f);
 }
 
+#blog {
+  background-color: #073763;
+  padding: 20px 0;
+}
+
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.blog-card {
+    background: var(--gris-claro);
+    border-left: 5px solid var(--azul-yankees);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.blog-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    margin-bottom: 15px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.autor-foto {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--azul);
+}
+
+.autor-nombre {
+    font-weight: bold;
+    color: var(--azul );
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.autor-fecha {
+    font-size: 0.8em;
+    color: #999;
+    margin: 0;
+}
+
 /* ESPECIALIDADES */
 section{
     padding: 60px 20px;
@@ -360,3 +424,21 @@ footer{
         font-size: 24px;
     }
 }
+
+.card-wrapper {
+    position: relative;
+    padding-top: 15px;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #06d6a0;
+    color: #0a1628;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
