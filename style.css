@@ -20,6 +20,15 @@ body{
     flex-direction: column;
 }
 
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #0a1628;
+}
+
 .navbar{
     width: 90%;
     max-width: 1200px;
@@ -112,6 +121,7 @@ body{
     align-items: flex-start;
     flex-wrap: wrap;
     color: #f8f9fa;
+    padding-top: 90px;
 }
 
 .text-section{
