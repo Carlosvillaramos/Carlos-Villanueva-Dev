@@ -464,7 +464,7 @@ footer{
     font-weight: bold;
 }
 
-.github-logo {
+.blog-img {
     max-width: 120px;
     height: auto;
     display: block;
@@ -472,26 +472,121 @@ footer{
     border-radius: 6px;
 }
 
-.GeminiFlash---Wide {
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 15px 0;
-    border-radius: 6px;
+/* PRIVACIDAD */
+.privacy-content{
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    border-left: 5px solid #ffd166;
+    border-radius: 8px;
+    padding: 30px;
+    line-height: 1.6;
 }
 
-.Google-Antigravity {
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 15px 0;
-    border-radius: 6px;
+.privacy-content h3{
+    color: #ffd166;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
-.Microsoft-se-une-a-AI {
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 15px 0;
-    border-radius: 6px;
+.privacy-content h3:first-child{
+    margin-top: 0;
+}
+
+.privacy-content p{
+    margin-bottom: 10px;
+}
+
+.privacy-content a{
+    color: #06d6a0;
+}
+
+.privacy-update{
+    margin-top: 25px;
+    font-size: 0.85em;
+    color: #a8edda;
+}
+
+/* BANNER DE COOKIES */
+.cookie-banner{
+    position: fixed;
+    bottom: -200px;
+    left: 0;
+    width: 100%;
+    background: #050d1a;
+    border-top: 2px solid #ffd166;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    z-index: 2000;
+    transition: bottom 0.4s ease;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.4);
+}
+
+.cookie-banner.show{
+    bottom: 0;
+}
+
+.cookie-banner p{
+    flex: 1;
+    min-width: 250px;
+    font-size: 0.9em;
+    color: #f8f9fa;
+    margin: 0;
+}
+
+.cookie-banner a{
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+.cookie-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.cookie-btn{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.cookie-btn-accept{
+    background: #06d6a0;
+    color: #0a1628;
+}
+
+.cookie-btn-accept:hover{
+    background: #a8edda;
+}
+
+.cookie-btn-reject{
+    background: transparent;
+    border: 2px solid #f8f9fa;
+    color: #f8f9fa;
+}
+
+.cookie-btn-reject:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px){
+    .cookie-banner{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cookie-buttons{
+        width: 100%;
+    }
+
+    .cookie-btn{
+        flex: 1;
+    }
 }
